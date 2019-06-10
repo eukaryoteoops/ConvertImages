@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  converter:
+    container_name: converter
+    image: converter_image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4000:80"
+    volumes:
+      #- /root/images/B:/app/images
+      - C:\Projects\ConvertImages\images:/app/images
+
