@@ -10,6 +10,6 @@ services:
     ports:
       - "4000:80"
     volumes:
-      #- /root/images/B:/app/images
-      - C:\Projects\ConvertImages\images:/app/images
+      - /root/images/B:/app/images
+      #- C:\Projects\ConvertImages\images:/app/images
 
